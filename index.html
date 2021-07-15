@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,6 @@
       ></script>
     </defer>
   </head>
-
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -25,7 +25,7 @@
       </div>
       <div class="status-bar__column">
         <span>100%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
       <!--Battery Icon-->
@@ -37,8 +37,8 @@
         If you have a Kakao Account, log in with your email or phone number.
       </p>
       <form id="login-form">
-        <input type="text" placeholder="Email or phone number" />
         <input type="password" placeholder="password" />
+        <input type="text" placeholder="Email or phone number" />
         <input type="submit" value="Log in" />
         <input type="submit" value="Sign Up" />
         <a href="#">Find Kakao Account or Password</a>
