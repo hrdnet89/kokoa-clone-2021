@@ -37,12 +37,22 @@
         If you have a Kakao Account, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="password" />
-      <input type="submit" value="Log in" />
-      <input type="submit" value="Sign Up" />
-      <a href="#">Find Kakao Account or Password</a>
+    <form class="login-form">
+      <input
+        class="login-form__input"
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__input"
+        name="password"
+        type="password"
+        placeholder="password"
+      />
+      <input class="login-form__btn" type="submit" value="Log in" />
+      <input class="login-form__btn" type="submit" value="Sign Up" />
+      <a class="login-form__a" href="#">Find Kakao Account or Password</a>
     </form>
   </body>
 </html>
