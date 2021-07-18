@@ -5,6 +5,7 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 15px;
+  margin-top: -15px;
 }
 
 #friends-display-link i {
@@ -25,5 +26,30 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  border-top: var(--main-border);
   color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /* 이후에 엘리먼트를 숨겨버리나 브라우저에는 내장 되어있음. */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh; /* 높이 화면에 1대1로 맟추는거 */
+  width: 100vw; /* 너비 화면에 1대1로 맞추는거 */
+  top: 0; /* 1대 1로 맞추는거를 맨끝으로 올려버림으로 화면 전체를 덮음. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards; /* forwards 붙으면  다시 안 돌아감*/
+  animation-delay: 2s; /* 애니메이션 시작을 2초 늦추는 명령문 */
 }
